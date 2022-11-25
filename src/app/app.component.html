@@ -3,7 +3,11 @@
     <mat-icon>menu</mat-icon>
   </button>
   <span>.: Etec Cidade Do Livro :.</span>
-  <span class="example-spacer"></span>
+  <span class="example-spacer"><button mat-button [matMenuTriggerFor]="menu" class="button">Stock</button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item routerLink="/produto">Produtos</button>
+      <button mat-menu-item routerLink="/categoria">Categorias</button>
+    </mat-menu></span>
   <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
     <mat-icon>favorite</mat-icon>
   </button>
@@ -11,4 +15,5 @@
     <mat-icon>share</mat-icon>
   </button>
 </mat-toolbar>
+
 <router-outlet></router-outlet>

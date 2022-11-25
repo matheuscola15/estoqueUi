@@ -4,19 +4,27 @@
     <th mat-header-cell *matHeaderCellDef> # </th>
     <td mat-cell *matCellDef="let element"> {{element.id}} </td>
   </ng-container>
-
-  <!-- Name Column -->
   <ng-container matColumnDef="nomeproduto">
-    <th mat-header-cell *matHeaderCellDef> nome do produto </th>
+    <th mat-header-cell *matHeaderCellDef>  Nome do produto </th>
     <td mat-cell *matCellDef="let element"> {{element.nomeproduto}} </td>
+  </ng-container>
+  <ng-container matColumnDef="modelo">
+    <th mat-header-cell *matHeaderCellDef>  Marca do produto</th>
+    <td mat-cell *matCellDef="let element"> {{element.modelo}} </td>
+  </ng-container>
+  <ng-container matColumnDef="modelo1">
+    <th mat-header-cell *matHeaderCellDef>  Modelo do produto</th>
+    <td mat-cell *matCellDef="let element"> {{element.modelo1}} </td>
+  </ng-container>
+  <ng-container matColumnDef="preco">
+    <th mat-header-cell *matHeaderCellDef>  Preço do produto </th>
+    <td mat-cell *matCellDef="let element"> {{element.preco}} </td>
   </ng-container>
 
   <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
   <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
 </table>
 
-<div class="example-button-row">
-  <button mat-raised-button color="primary" routerLink="/categoria">Categorias</button>
-</div>
+
 
 

@@ -59,3 +59,12 @@ th{
   font-size: medium;
   font-family: fantasy;
 }
+
+.example-button-row{
+  display: flex;
+}
+
+.button{
+  background-color: #c2185b;
+  color: #fff;
+}

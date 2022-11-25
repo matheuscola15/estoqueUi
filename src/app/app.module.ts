@@ -8,6 +8,8 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import { CoreModule } from './core/core.module';
+import {MatMenuModule} from '@angular/material/menu';
+
 
 
 
@@ -22,7 +24,8 @@ import { CoreModule } from './core/core.module';
     CoreModule,
     MatToolbarModule,
     MatIconModule,
-    MatButtonModule
+    MatButtonModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]

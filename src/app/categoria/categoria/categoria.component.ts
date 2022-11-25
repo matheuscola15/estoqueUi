@@ -9,13 +9,13 @@ import { Categoria } from 'src/app/core/model';
 export class CategoriaComponent implements OnInit {
 
   categoria: Categoria [] = [
-    {id: 1, nomecategoria: "Matheus"},
-    {id: 2, nomecategoria: "Graziela"},
-    {id: 3, nomecategoria: "Daniel"},
-    {id: 4, nomecategoria: "Derek"},
-    {id: 5, nomecategoria: "Victor"},
-    {id: 6, nomecategoria: "Francis"},
-    {id: 7, nomecategoria: "Karina"}
+    {id: 1, nomecategoria: "Eletrônico"},
+    {id: 2, nomecategoria: "Eletrodoméstico"},
+    {id: 3, nomecategoria: "Roupa"},
+    {id: 4, nomecategoria: "Alimento"},
+    {id: 5, nomecategoria: "Automóvel"},
+    {id: 6, nomecategoria: "Perfumaria"},
+    {id: 7, nomecategoria: "Bebida"}
 
   ]
   displayedColumns = ['id', 'nomecategoria']

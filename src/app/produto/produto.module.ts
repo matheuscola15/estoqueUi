@@ -4,6 +4,8 @@ import { CommonModule } from '@angular/common';
 import { ProdutoRoutingModule } from './produto-routing.module';
 import { ProdutoComponent } from './produto/produto.component';
 import {MatTableModule} from '@angular/material/table';
+import {MatMenuModule} from '@angular/material/menu';
+
 import {MatButtonModule} from '@angular/material/button';
 
 
@@ -15,7 +17,8 @@ import {MatButtonModule} from '@angular/material/button';
     CommonModule,
     ProdutoRoutingModule,
     MatTableModule,
-    MatButtonModule
+    MatButtonModule,
+    MatMenuModule
   ]
 })
 export class ProdutoModule { }
